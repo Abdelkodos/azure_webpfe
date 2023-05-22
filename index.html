@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFE Web Site</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(./images/ISTAPIC.png);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .title p {
+            font-size: xx-large;
+            color: #fff;
+            font-weight: bolder;
+            -webkit-text-stroke: #000 2px;
+        }
+
+        main {
+            margin-top: 400px;
+        }
+        /*
+        main:hover {    
+            margin-top: 0px;
+        } */
+
+        main p {
+            width: 42vw;
+            height: 5vh;
+            background-color: azure;
+            color: #000;
+            margin: auto;
+            padding: 35px;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        main p:hover {
+            color: rgb(24, 77, 3);
+            background-color: rgb(79, 167, 53);
+        }
+
+        .img-ista img {
+            height: 90px;
+            width: 90px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar .img-ista {
+                display: none;
+            }
+
+            .navbar .img-sbou {
+                display: none;
+            }
+
+            main {
+                margin-top: 0px;
+            }
+
+            main p {
+                width: 70vw;
+                height: 105vh;
+                background-color: azure;
+                color: #000;
+                margin: auto;
+                padding: 15px;
+                font-weight: bold;
+                font-size: larger;
+            }
+
+        }
+    </style>
+    <div class="navbar">
+        <div class="img-ista">
+            <img src="./images/Logo_ofppt.png" alt="">
+        </div>
+        <div class="title">
+            <p>Rapport de Stage PFE</p>
+        </div>
+        <div class="img-sbou">
+            <img src="./images/logo_footer_new.webp" alt="">
+        </div>
+    </div>
+    <main>
+        <p>
+            Le projet de fin d'étude consiste à héberger un site web sur Azure Cloud.
+        </p>
+    </main>
+</body>
+</html>
